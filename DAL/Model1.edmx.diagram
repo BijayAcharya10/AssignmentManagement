@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5d86998b14a44bf6a74d8d225af1e953" Name="Diagram1">
+        <EntityTypeShape EntityType="AMSDBModel.sysdiagram" Width="1.5" PointX="5.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMSDBModel.tblActivityLog" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMSDBModel.tblAssignment" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMSDBModel.tblAssignmentSubmission" Width="1.5" PointX="8.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMSDBModel.tblFaculty" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMSDBModel.tblLogin" Width="1.5" PointX="7.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMSDBModel.tblSession" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMSDBModel.tblStaff" Width="1.5" PointX="9.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMSDBModel.tblStatu" Width="1.5" PointX="6" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMSDBModel.tblStudent" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMSDBModel.tblSubject" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMSDBModel.tblTeacher" Width="1.5" PointX="3" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMSDBModel.tblTeacherSubjectMapping" Width="1.5" PointX="5.25" PointY="10.25" IsExpanded="true" />
+        <AssociationConnector Association="AMSDBModel.FK_tblActivityLog_tblAssignment" ManuallyRouted="false" />
+        <AssociationConnector Association="AMSDBModel.FK_tblActivityLog_tblStudent" ManuallyRouted="false" />
+        <AssociationConnector Association="AMSDBModel.FK_tblActivityLog_tblTeacher" ManuallyRouted="false" />
+        <AssociationConnector Association="AMSDBModel.FK_tblAssignment_tblSubject" ManuallyRouted="false" />
+        <AssociationConnector Association="AMSDBModel.FK_tblAssignmentSubmission_tblAssignment" ManuallyRouted="false" />
+        <AssociationConnector Association="AMSDBModel.FK_tblAssignmentSubmission_tblStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="AMSDBModel.FK_tblAssignmentSubmission_tblStudent" ManuallyRouted="false" />
+        <AssociationConnector Association="AMSDBModel.FK_tblStudent_tblFaculty" ManuallyRouted="false" />
+        <AssociationConnector Association="AMSDBModel.FK_tblStudent_tblSession" ManuallyRouted="false" />
+        <AssociationConnector Association="AMSDBModel.FK_tblTeacherSubjectMapping_tblSubject" ManuallyRouted="false" />
+        <AssociationConnector Association="AMSDBModel.FK_tblTeacherSubjectMapping_tblTeacher" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
